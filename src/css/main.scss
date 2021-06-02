@@ -1,0 +1,36 @@
+// ./src icinde css icinde yaradilan dosyalarin yolun buraya elave ediriy
+
+
+// pages
+@import "./pages/contact";
+@import "./pages/home";
+@import "./pages/containers";
+@import "./pages/metal";
+@import "./pages/detail";
+
+
+
+
+
+
+
+// abstract
+@import "./abstract/mixin";
+@import "./abstract/base";
+
+
+
+
+
+// layout
+@import './layout/header';
+@import './layout/footer';
+
+
+
+
+
+// components
+@import './components/btn';
+@import './components/card';
+

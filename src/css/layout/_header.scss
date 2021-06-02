@@ -1,0 +1,48 @@
+.header {
+  padding: 75px 0;
+  max-height: 235px;
+
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+  .navbar-brand {
+    margin-right: 85px !important;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    font-weight: bold;
+    color: #133d69 !important;
+    position: relative;
+  }
+
+  .nav-item:not(:last-child) {
+    margin-right: 98px;
+  }
+
+  .nav-item {
+    position: relative;
+    &.active {
+      &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 50%;
+        height: 1px;
+        background-color: #133d69;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

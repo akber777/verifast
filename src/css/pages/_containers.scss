@@ -1,0 +1,120 @@
+.containersSelf {
+  &__breadCrumbs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    a {
+      font-size: 32px;
+      color: #133d69;
+      font-weight: bold;
+      position: relative;
+
+      &.active {
+        color: #e07662;
+      }
+
+      &:not(:last-child) {
+        margin-right: 36px;
+
+        &:after {
+          position: absolute;
+          content: "";
+          bottom: -10px;
+          width: 2px;
+          height: 57%;
+          background-color: #133d69;
+          right: -19px;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+
+  &__slideBox {
+    display: flex;
+    margin-top: 80px;
+    position: relative;
+
+    #secondary-slider {
+      margin-top: 17px;
+    }
+
+    #primary-slider {
+      img {
+        height: 483px;
+      }
+    }
+
+    .splide__arrow--prev {
+      left: -3em;
+    }
+
+    .splide__arrow--next {
+      right: -3em;
+    }
+
+    .splide__arrow {
+      background-color: transparent;
+      opacity: 1;
+
+      svg {
+        fill: #bebebe;
+        font-size: 25px;
+      }
+    }
+
+    .splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
+      border-color: transparent;
+    }
+
+    .splide__pagination {
+      bottom: -50px;
+
+      .splide__pagination__page.is-active {
+        background-color: #8b8b8b !important;
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      li {
+        &:not(:last-child) {
+          margin-right: 9px;
+        }
+
+        button {
+          width: 13px;
+          height: 13px;
+          background-color: #bebebe;
+        }
+      }
+    }
+
+    &--left {
+      width: 60%;
+      padding-right: 115px;
+
+      p {
+        font-size: 28px;
+      }
+    }
+
+    &--right {
+      width: 40%;
+    }
+  }
+
+  &__info {
+    margin-top: 150px;
+
+    img {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}
